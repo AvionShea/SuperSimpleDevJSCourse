@@ -34,13 +34,13 @@ Thank you, come again!`)
     //Setup: 2 basketballs (20.95 each) with $4.99 shipping, and 2 t-shirts($7.99 each) with $4.99 shipping
 
 //3k.Using interpolation, create the first line of text
-    `Items (${2+2}): $${(2095 * 2)/100 + (799 * 2)/100}`
+    `Items (${2+2}): $${(2095 * 2 + 799 * 2)/100}`
 
 //3l. Create second line of text: 'Shipping & handling: $9.98
     `Shipping & handling: $${(499 + 499)/100}`
 
 //3m. Create third line: 'Total before tax: $67.86'
-    `Total before tax: $${(5788 + 998)/100}`
+    `Total before tax: $${(2095 * 2 + 799 * 2 + 499 + 499)/100}`
 
 //3n. Create fourth line of text: 'Estimated tax(10%): $6.79 and Math.round() to calculate the exact number'
-    `Estimated tax(10%): $${Math.round(6786 * 0.1)/100}`
+    `Estimated tax(10%): $${Math.round((2095 * 2 + 799 * 2 + 499 + 499) * 0.1)/100}`
