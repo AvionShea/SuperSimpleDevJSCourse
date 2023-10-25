@@ -44,3 +44,5 @@ Thank you, come again!`)
 
 //3n. Create fourth line of text: 'Estimated tax(10%): $6.79 and Math.round() to calculate the exact number'
     `Estimated tax(10%): $${Math.round((2095 * 2 + 799 * 2 + 499 + 499) * 0.1)/100}`
+
+    //Lesson 4 Exercises - HTML, CSS Review
