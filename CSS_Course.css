@@ -1,0 +1,22 @@
+.purple-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.teal-btn {
+    background-color: teal;
+    border: 5px dotted;
+    border-radius: 10px;
+}
+
+.addCart{
+    background-color: yellow;
+    cursor: pointer;
+}
+.buyNow{
+    background-color: orange;
+    cursor: pointer;
+}
