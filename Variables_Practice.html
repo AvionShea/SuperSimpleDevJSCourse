@@ -23,7 +23,7 @@
     <button
       class="addCart"
       onclick="
-      cartQuantity = cartQuantity + 1; console.log(`Cart quantity: ${cartQuantity}`);
+      cartQuantity++; console.log(`Cart quantity: ${cartQuantity}`);
     "
     >
       Add to Cart
@@ -32,7 +32,7 @@
     <button
       class="plusTwo"
       onclick="
-      cartQuantity = cartQuantity + 2; 
+      cartQuantity += 2; 
       console.log(`Cart quantity: ${cartQuantity}`);
     "
     >
@@ -42,7 +42,7 @@
     <button
       class="plusThree"
       onclick="
-    cartQuantity = cartQuantity + 3; 
+    cartQuantity += 3;
     console.log(`Cart quantity: ${cartQuantity}`);"
     >
       +3
