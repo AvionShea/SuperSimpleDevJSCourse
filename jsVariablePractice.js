@@ -1,3 +1,4 @@
+/*
 let variableOne = 3;
 console.log(variableOne);
 
@@ -16,3 +17,6 @@ console.log(variableOne);
 
 variableOne = variableOne + 1;
 console.log(variableOne)
+*/
+
+let cartQuantity = 0;
