@@ -1,7 +1,9 @@
-if (15 >= 16) {
+const age = 15;
+
+if (age >= 16) {
   console.log('You can drive!');
-} else if (15 >= 14) {
+} else if (age >= 14) {
   console.log('Almost there!')
-}else {
+} else {
   console.log('You can not drive!');
 }
