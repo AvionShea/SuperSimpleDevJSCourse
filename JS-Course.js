@@ -51,5 +51,3 @@ Thank you, come again!`)
     console.log(2+2)
     console.log('some' + 'text')
     alert('Welcome!')
-
-//Lesson 5 Exercise - Variables
