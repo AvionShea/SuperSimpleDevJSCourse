@@ -21,6 +21,30 @@ console.log(product);
 console.log(typeof product);
 */
 
+const productTwo = {
+  name: 'shirts',
+  'delivery-time': '1 day', //brackets are optional
+  rating: { //nested object
+    stars: 4.5,
+    count: 87
+  },
+  fun: function functionONe(){
+    console.log('A function inside object.') //saved functions inside an object is called a Method
+  }
+};
+console.log(productTwo);
+console.log(productTwo.name); //dot notation - used by default
+console.log(productTwo['name']) //bracket notation - used with properties that don't work with dot notation
+console.log(productTwo['delivery-time'])
+
+console.log(productTwo.rating.stars);
+
+productTwo.fun();
+
+console.log(typeof console);
+console.log(typeof console.log);
+
+
 const score = {
   Wins: 0,
   Loses: 0,
