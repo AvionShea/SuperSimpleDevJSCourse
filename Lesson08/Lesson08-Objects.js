@@ -32,6 +32,8 @@ const productTwo = {
     console.log('A function inside object.') //saved functions inside an object is called a Method
   }
 };
+
+/*
 console.log(productTwo);
 console.log(productTwo.name); //dot notation - used by default
 console.log(productTwo['name']) //bracket notation - used with properties that don't work with dot notation
@@ -43,13 +45,34 @@ productTwo.fun();
 
 console.log(typeof console);
 console.log(typeof console.log);
+*/
 
+/*
+//JSON stands for JavaScript Object Notation
 
-const score = {
-  Wins: 0,
-  Loses: 0,
-  Ties: 0
+console.log(JSON.stringify(productTwo)); //converts a JavaScript object to JSON
+console.log(typeof JSON.stringify(productTwo));
+
+const jsonString = JSON.stringify(productTwo);
+console.log(JSON.parse(jsonString));
+*/
+
+let score = JSON.parse(localStorage.getItem('score')) || {
+Wins: 0,
+Losses: 0,
+Ties: 0
 };
+
+/*
+Code below is the same as the code above
+if(!score){ //null is a falsy value, meaning it will behave like false
+  score = {
+    Wins: 0,
+    Losses: 0,
+    Ties: 0
+  };
+}
+*/
 
 function pickComputerMove(){
   const randomNumber = Math.random();
@@ -105,11 +128,14 @@ function usersChoice(playerMove){
     if(result === 'You win.'){
       score.Wins++;
     }else if(result == 'You lose.'){
-      score.Loses++;
+      score.Losses++;
     }else if(result === 'Tie.'){
       score.Ties++;
     }
 
+    //localStorage - doesn't get deleted when the page is refreshed
+    localStorage.setItem('score', JSON.stringify(score));
+
   alert(`You chose ${playerMove}. Computer chose ${computerMove}. ${result}
-Wins: ${score.Wins}, Loses: ${score.Loses}, Ties: ${score.Ties}`);
+Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`);
 }
