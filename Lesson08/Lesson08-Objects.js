@@ -138,4 +138,54 @@ function usersChoice(playerMove){
 
   alert(`You chose ${playerMove}. Computer chose ${computerMove}. ${result}
 Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`);
-}
+};
+
+//Auto-boxing
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+console.log('hello'.toLowerCase());
+
+//reference
+const objectOne = {
+  message: 'hello'
+};
+
+const objectTwo = objectOne; // copy by references
+
+objectOne.message = 'Good job!';
+console.log(objectOne);
+console.log(objectTwo);
+
+const objectThree = {
+  message: 'Good job!'
+};
+
+console.log(objectThree === objectOne); //compares reference and not values
+console.log(objectTwo === objectOne);
+console.log(objectOne.message === objectThree.message);// comparing values
+
+//Shortcuts for Objects
+const objectFour = {
+  message: 'Good job!',
+  price: 799
+};
+
+// const message = objectFour.message;
+//destructuring - does the same thing as line above
+const { message, price } = objectFour; 
+console.log(message);
+console.log(price);
+
+//Shorthand Property
+const objectFive = {
+ // message: message - takes whatever is inside variable and substitutes it
+  message, //if the property and variable name is the same, you can just type it once
+  /* method: function functionOne() {
+    console.log('method');
+  }*/
+  method(){ //Shorthand Method for the lines above
+    console.log('method');
+  }
+};
+console.log(objectFive);
+objectFive.method();
