@@ -17,23 +17,23 @@ if(personGuess === flipResults){
   console.log('You Lose!');
 } */
 //8j.
-let score = {
-  wins: 0,
-  loses: 0
-};
+const score = JSON.parse(localStorage.getItem('score')) || {
+    wins: 0,
+    losses: 0
+  };
 
 //8i.
 function playGame(playerChoice){
   let coinSide = (Math.random() < 0.5) ? 'Heads': 'Tails';
 
-  console.log(playerChoice === coinSide) ? 'You win!' : 'You lose!'; 
+  console.log((playerChoice === coinSide) ? 'You win!' : 'You lose!'); 
 
   if(playerChoice === coinSide){
     score.wins++;
   }else{
-    score.loses++;
+    score.losses++;
   }
   console.log(score);
-}
 
-//8k.
+  localStorage.setItem('score', JSON.stringify(score));
+}
