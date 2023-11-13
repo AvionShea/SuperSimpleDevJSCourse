@@ -16,11 +16,24 @@ if(personGuess === flipResults){
 }else{
   console.log('You Lose!');
 } */
+//8j.
+let score = {
+  wins: 0,
+  loses: 0
+};
 
-let personGuess = 'Heads';
+//8i.
+function playGame(playerChoice){
+  let coinSide = (Math.random() < 0.5) ? 'Heads': 'Tails';
 
-let coinSide = (Math.random() < 0.5) ? 'Heads' : 'Tails';
-console.log(coinSide);
+  console.log(playerChoice === coinSide) ? 'You win!' : 'You lose!'; 
 
+  if(playerChoice === coinSide){
+    score.wins++;
+  }else{
+    score.loses++;
+  }
+  console.log(score);
+}
 
-let coinFlipGame = (personGuess === coinSide) ? console.log('You Win!') : console.log('You Lose!');
+//8k.
