@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 09 DOM Projects</title>
+  </head>
+  <body>
+    <h1>Lesson 09 DOM Projects Page</h1>
+
+    <p>YouTube Subscribe Button</p>
+    <button
+      onclick=" 
+      const btnElement = document.querySelector('.js-subscribe-btn');
+
+      if (btnElement.innerHTML === 'Subscribe') {
+          btnElement.innerHTML = 'Subscribed';
+      } else {
+          btnElement.innerHTML = 'Subscribe';
+      }" class="js-subscribe-btn">Subscribe</button>
+
+    <p>Rock, Paper, Scissors</p>
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+
+    <script src="lesson09_DOM_Projects.js"></script>
+  </body>
+</html>

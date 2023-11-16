@@ -12,9 +12,11 @@ console.log(document.body.innerHTML);
 document.body.innerHTML = '<button>Good Job!</button>';
 */
 
+/*
 console.log(document.querySelector('button').innerHTML);
 document.querySelector('button')
     .innerHTML = 'Changed';
 
 const buttonElement = document.querySelector('.js-button');
 console.log(buttonElement);
+*/
