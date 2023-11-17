@@ -1,4 +1,4 @@
-//Lesson 09 JavaScript
+//Lesson 09 JavaScript - DOM
 /*document.body.innerHTML = 'Hello';
 document.title = "Good job!"*/
 /*
