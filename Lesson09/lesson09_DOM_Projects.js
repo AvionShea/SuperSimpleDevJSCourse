@@ -93,6 +93,26 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   };
 
   function updateScoreElement(){
-    document.querySelector('.js-scoreCard')
-      .innerHTML = `Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
+    document.querySelector('.js-scoreCard').innerHTML = `Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
+  };
+
+
+
+
+  //Amazon Shipping Cost
+  function calculateTotal(){
+    const inputElement =  document.querySelector('.js-input');
+    let cost = Number(inputElement.value); //anytime we get a value from the DOM, it will be a string. We must convert to a number with Number()
+
+    if(cost < 40){
+      cost = cost += 10;
+    }
+
+    document.querySelector('.js-totalCalculation').innerHTML = `Total Cost: $${cost}`;
+  };
+
+  function handleCostKeydown(event){
+    if(event.key === 'Enter'){
+      calculateTotal();
+    }
   };

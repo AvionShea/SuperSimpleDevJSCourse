@@ -8,14 +8,45 @@
   <body>
     <h1>Lesson 09 DOM Projects Page</h1>
 
-    <p>YouTube Subscribe Button</p>
+    <h2>YouTube Subscribe Button</h2>
     <button onclick="subscribe();" class="js-subscribe-btn">Subscribe</button>
 
-    <p>Rock, Paper, Scissors</p>
+    <h2>Rock, Paper, Scissors</h2>
+    <button onclick="usersChoice('Rock');">Rock</button>
 
-    <p>Amazon Shipping Calculator</p>
+    <button onclick="usersChoice('Paper');">Paper</button>
+
+    <button onclick="usersChoice('Scissors');">Scissors</button>
+
+    <p class="js-results"></p>
+
+    <p class="js-gameChoices"></p>
+
+    <p class="js-scoreCard"></p>
+
+    <button
+      onclick="
+    score.Wins = 0;
+    score.Losses = 0;
+    score.Ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+    "
+    >
+      Reset Score
+    </button>
+
+    <h2>Amazon Shipping Calculator</h2>
     <p>Orders under $40 = +$10 shipping.</p>
     <p>Orders over $40 = FREE shipping.</p>
+    <input
+      placeholder="Cost of Order"
+      class="js-input"
+      onkeydown="
+      handleCostKeydown(event);"
+    />
+    <button onclick="calculateTotal()">Calculate</button>
+    <p class="js-totalCalculation"></p>
 
     <script src="lesson09_DOM_Projects.js"></script>
   </body>
