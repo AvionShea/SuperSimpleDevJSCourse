@@ -86,10 +86,10 @@ let score = JSON.parse(localStorage.getItem('score')) || {
       localStorage.setItem('score', JSON.stringify(score));
 
       updateScoreElement();
+
+      document.querySelector('.js-results').innerHTML = result;
     
-  
-    alert(`You chose ${playerMove}. Computer chose ${computerMove}. ${result}
-  Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`);
+      document.querySelector('.js-gameChoices').innerHTML = `You chose ${playerMove} - Computer chose ${computerMove}`;
   };
 
   function updateScoreElement(){
