@@ -100,6 +100,12 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 
 
   //Amazon Shipping Cost
+ function handleCostKeydown(event){
+    if(event.key === 'Enter'){
+      calculateTotal();
+    }
+  };
+
   function calculateTotal(){
     const inputElement =  document.querySelector('.js-input');
     let cost = Number(inputElement.value); //anytime we get a value from the DOM, it will be a string. We must convert to a number with Number()
@@ -108,11 +114,5 @@ let score = JSON.parse(localStorage.getItem('score')) || {
       cost = cost += 10;
     }
 
-    document.querySelector('.js-totalCalculation').innerHTML = `Total Cost: $${cost}`;
-  };
-
-  function handleCostKeydown(event){
-    if(event.key === 'Enter'){
-      calculateTotal();
-    }
+    document.querySelector('.js-totalCalculation').innerText = `Total Cost: $${cost}`;
   };
