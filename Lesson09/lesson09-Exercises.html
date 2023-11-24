@@ -10,8 +10,18 @@
     <button>9a</button>
     <button class="js-9b">9b</button>
 
-    <button class="heads">heads</button>
-    <button class="tails">tails</button>
+    <button
+      onclick="document.querySelector('.results')
+    .innerHTML = 'You chose: heads';"
+    >
+      heads
+    </button>
+    <button
+      onclick="document.querySelector('.results')
+    .innerHTML = 'You chose: tails';"
+    >
+      tails
+    </button>
     <p class="results"></p>
     <script src="lesson09-Exercises.js"></script>
   </body>
