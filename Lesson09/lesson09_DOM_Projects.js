@@ -99,7 +99,6 @@ function updateScoreElement() {
 
 
 
-//Amazon Shipping Cost
 String(25);
 console.log('25' - 5);
 console.log('25' + 5);
@@ -111,6 +110,7 @@ window.console //same console.log
 window.console.log('window');
 window.alert //same as alert()
 
+//Amazon Shipping Cost
 function handleCostKeydown(event) {
   if (event.key === 'Enter') {
     calculateTotal();

@@ -28,6 +28,24 @@
     <button id="submitName">Submit</button>
     <p id="nameResults"></p>
 
+    <h1>Challenge Exercises</h1>
+
+    <h2>Amazon Shipping Calculator</h2>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+    <input
+      placeholder="Cost of Order"
+      class="js-input"
+      onkeydown="
+      handleCostKeydown(event);"
+    />
+    <button onclick="calculateTotal()">Calculate</button>
+    <p class="js-totalCalculation"></p>
+
+    <h2>9h Project</h2>
+    <input id="challengeExercise9h" placeholder="Enter Text" onkeyup="displayNameInDom()">
+    <p id="textFrom9h"></p>
+
     <script src="lesson09-Exercises.js"></script>
   </body>
 </html>
