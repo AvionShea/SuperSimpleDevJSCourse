@@ -44,3 +44,32 @@ function displayNameInDom() {
 
     document.querySelector('#textFrom9h').innerHTML = textDisplay.value;
 }
+
+//9i
+
+function displayQuantity() {
+    document.querySelector('#cartItems').innerHTML = `Cart quantity: ${cartQuantity}`;
+}
+let cartQuantity = 0;
+
+document.querySelector('#cartItems').innerHTML = `Cart quantity: ${cartQuantity}`;
+
+function updateCartQuantity(changeValue) {
+
+    if (cartQuantity + changeValue > 10) {
+        alert('The cart is full.')
+    }
+    else if (cartQuantity + changeValue < 0) {
+        alert('Not enough items in the cart.')
+    }
+    else {
+        cartQuantity += changeValue;
+        document.querySelector('#cartItems').innerHTML = `Cart quantity: ${cartQuantity}`;
+    }
+}
+
+function resetCart() {
+    cartQuantity = 0;
+    alert('Cart was reset.');
+    document.querySelector('#cartItems').innerHTML = `Cart quantity: ${cartQuantity}`;
+}
