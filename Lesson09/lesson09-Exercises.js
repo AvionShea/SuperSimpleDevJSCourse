@@ -73,3 +73,27 @@ function resetCart() {
     alert('Cart was reset.');
     document.querySelector('#cartItems').innerHTML = `Cart quantity: ${cartQuantity}`;
 }
+
+//9j
+let calculation = localStorage.getItem('calculation') || '';
+
+document.querySelector('#calculationDisplay').innerHTML = calculation;
+
+function updateCalculation(value) {
+    calculation += value;
+    document.querySelector('#calculationDisplay').innerHTML = calculation;
+    saveCalculations();
+}
+function evalCalculation() {
+    calculation = eval(calculation);
+    document.querySelector('#calculationDisplay').innerHTML = calculation;
+}
+
+function saveCalculations() {
+    localStorage.setItem('calculation', calculation);
+};
+
+function clearScreen() {
+    calculation = document.querySelector('#calculationDisplay').innerHTML = '';
+    alert('Cleared.');
+}
