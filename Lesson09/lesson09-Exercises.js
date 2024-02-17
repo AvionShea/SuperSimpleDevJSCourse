@@ -32,7 +32,7 @@ function calculateTotal() {
     let cost = Number(inputElement.value) * 100; //anytime we get a value from the DOM, it will be a string. We must convert to a number with Number() // multiply by 100 to convert to money
 
     if (cost < 4000) {
-        cost = cost += 10;
+        cost = cost += 1000;
     }
 
     document.querySelector('.js-totalCalculation').innerText = `Total Cost: $${cost / 100}`;
