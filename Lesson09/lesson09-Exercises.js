@@ -77,16 +77,16 @@ function resetCart() {
 //9j
 let calculation = localStorage.getItem('calculation') || '';
 
-document.querySelector('#calculationDisplay').innerHTML = calculation;
+displayCalculation();
 
 function updateCalculation(value) {
     calculation += value;
-    document.querySelector('#calculationDisplay').innerHTML = calculation;
+    displayCalculation()
     saveCalculations();
 }
 function evalCalculation() {
     calculation = eval(calculation);
-    document.querySelector('#calculationDisplay').innerHTML = calculation;
+    displayCalculation()
 }
 
 function saveCalculations() {
@@ -96,4 +96,8 @@ function saveCalculations() {
 function clearScreen() {
     calculation = document.querySelector('#calculationDisplay').innerHTML = '';
     alert('Cleared.');
+}
+
+function displayCalculation() {
+    document.querySelector('#calculationDisplay').innerHTML = calculation;
 }
