@@ -1,9 +1,14 @@
 .subscribe-btn {
     border: none;
-    background: black;
+    background: red;
     color: white;
     border-radius: 50px;
     padding: 10px;
     width: 100px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.is-subscribed {
+    background: black;
 }

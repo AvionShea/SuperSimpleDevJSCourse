@@ -5,10 +5,15 @@ function subscribe() {
     //innerText gets inside element without spaces
     if (btnElement.innerText === 'Subscribe') {
         btnElement.innerText = 'Subscribed';
+        btnElement.classList.add('is-subscribed');
     } else {
         btnElement.innerText = 'Subscribe';
+        btnElement.classList.remove('is-subscribed');
     }
 };
+
+//.classList is an oject(properties and methods) that give control of the class attribute
+//.add() adds a class to an element
 
 
 
