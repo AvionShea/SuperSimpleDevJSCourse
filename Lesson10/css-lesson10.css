@@ -19,3 +19,18 @@ body {
 .is-subscribed {
     background: black;
 }
+
+.cost-input {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.total-btn {
+    padding: 12px;
+    background: green;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
