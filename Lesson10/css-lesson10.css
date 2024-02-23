@@ -79,14 +79,14 @@ body {
 }
 
 .score {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .score-reset {
     cursor: pointer;
     box-shadow: 0 0 5px gold, 0 0 25px gold;
     background: gold;
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 15px;
     padding: 10px;
     font-weight: bold;
