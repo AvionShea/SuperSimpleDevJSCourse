@@ -8,23 +8,24 @@
 </head>
 <body class="rock-paper-scissors-body">
 <h2 class="title">Rock, Paper, Scissors</h2>
-<button onclick="usersChoice('Rock');" id="rock">Rock</button>
+<button onclick="usersChoice('Rock');" id="rock" class="btn-choice"><img src="img/rock-emoji.png" alt="rock-hand-emoji" class="move-icon"></button>
 
-<button onclick="usersChoice('Paper');" id="paper">Paper</button>
+<button onclick="usersChoice('Paper');" id="paper" class="btn-choice"><img src="img/paper-emoji.png" alt="paper-hand-emoji" class="move-icon"></button>
 
-<button onclick="usersChoice('Scissors');" id="scissors">Scissors</button>
+<button onclick="usersChoice('Scissors');" id="scissors" class="btn-choice"><img src="img/scissors-emoji.png" alt="scissors-hand-emoji" class="move-icon"></button>
 
-<p class="js-results"></p>
+<p class="js-results result"></p>
 
 <p class="js-gameChoices"></p>
 
-<p class="js-scoreCard"></p>
+<p class="js-scoreCard score"></p>
 
 <button
   onclick="
 resetScore();
 updateScoreElement();
 "
+class="score-reset"
 >
   Reset Score
 </button>

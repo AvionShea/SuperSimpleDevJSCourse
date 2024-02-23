@@ -42,9 +42,51 @@ body {
     background: rgb(5, 97, 89);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto 50px;
 }
 
 .title {
     font-size: 30px;
     font-weight: bold;
+}
+
+.move-icon {
+    height: 90px;
+    width: 90px;
+}
+
+.btn-choice {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    border: 5px solid white;
+    border-radius: 100px;
+    background: transparent;
+    margin: 0 10px 20px 10px;
+}
+
+#rock {
+    border: 5px dotted white;
+}
+
+#scissors {
+    border: 5px dashed white;
+}
+
+.result {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.score {
+    margin-top: 60px;
+}
+
+.score-reset {
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 75px;
+    border: none;
 }
