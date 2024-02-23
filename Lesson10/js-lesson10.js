@@ -92,7 +92,7 @@ function usersChoice(playerMove) {
 
     document.querySelector('.js-results').innerHTML = result;
 
-    document.querySelector('.js-gameChoices').innerHTML = `You chose ${playerMove} - Computer chose ${computerMove}`;
+    document.querySelector('.js-gameChoices').innerHTML = `You chose <img src="img/${playerMove}-emoji.png" class="move-icon">  Computer chose <img src="img/${computerMove}-emoji.png" class="move-icon">`;
 };
 
 function updateScoreElement() {
