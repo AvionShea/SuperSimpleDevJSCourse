@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*YOUTUBE SUBSCRIBE BUTTON*/
 .subscribe-btn {
     border: none;
     background: red;
@@ -16,6 +17,7 @@ body {
     cursor: pointer;
 }
 
+/*AMAZON CART*/
 .is-subscribed {
     background: black;
 }
@@ -33,4 +35,16 @@ body {
     font-size: 15px;
     border: none;
     cursor: pointer;
+}
+
+/*ROCK, PAPER, SCISSORS*/
+.rock-paper-scissors-body {
+    background: rgb(5, 97, 89);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
 }
