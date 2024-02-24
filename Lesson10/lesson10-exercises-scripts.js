@@ -20,8 +20,16 @@ console.log(btn.classList.contains('js-button'));
 function toggleCheck(selector){
     let pressedBtn = document.querySelector(selector);
     if(!pressedBtn.classList.contains('is-toggled')){
-        pressedBtn.classList.add('is-toggled')
+        turnOffBtn();
+        pressedBtn.classList.add('is-toggled');
     }else{
-        pressedBtn.classList.remove('is-toggled')
+        pressedBtn.classList.remove('is-toggled');
     };
 };
+
+function turnOffBtn(){
+    let previousBtn = document.querySelector('.is-toggled');
+    if(previousBtn){
+        previousBtn.classList.remove('is-toggled');
+    };
+}
