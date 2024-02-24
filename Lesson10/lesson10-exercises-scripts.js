@@ -33,3 +33,24 @@ function turnOffBtn(){
         previousBtn.classList.remove('is-toggled');
     };
 }
+
+//Amazon Shipping Cost
+function handleCostKeydown(event) {
+    if (event.key === 'Enter') {
+        calculateTotal();
+    }
+};
+
+function calculateTotal() {
+    const inputElement = document.querySelector('.js-input');
+    let cost = Number(inputElement.value) * 100; //anytime we get a value from the DOM, it will be a string. We must convert to a number with Number()
+
+    if (cost < 4000 && cost > 0) {
+        cost = cost += 1000;
+        document.querySelector('.js-totalCalculation').innerText = `Total Cost: $${cost / 100}`;
+    } else{
+        let errorDisplay = document.querySelector('.js-totalCalculation')
+        errorDisplay.classList.add('error')
+        errorDisplay.innerText = `Error: cost cannot be less than $0`;
+    }
+};

@@ -1,5 +1,5 @@
 body{
-    background: rgb(7, 105, 15);
+    background: rgb(194, 191, 8);
 }
 .amazon-btn{
     background: rgb(255, 216, 20);
@@ -59,4 +59,31 @@ body{
     background: rgb(173, 255, 47);
     box-shadow: 0 0 10px rgb(173, 255, 47), 0 0 15px rgb(173, 255, 47),
     0 0 15px rgb(173, 255, 47), 0 0 5px rgb(173, 255, 47);
+}
+
+/*AMAZON CART*/
+.cost-input {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.total-btn {
+    padding: 12px;
+    background: rgb(45, 0, 128);
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.display{
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
 }
