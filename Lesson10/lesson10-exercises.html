@@ -7,36 +7,51 @@
     <title>Lesson 10 Exercises</title>
   </head>
   <body>
-    <h2>Exercise 10a and 10b</h2>
-    <button class="amazon-btn">Add to Cart</button>
-    <button class="uber-btn" id="now-uber-btn">Request now</button>
-    <button class="uber-btn" id="later-uber-btn">Schedule for later</button>
+    <div class="project">
+      <h2>Exercise 10a and 10b</h2>
+      <button class="amazon-btn">Add to Cart</button>
+      <button class="uber-btn" id="now-uber-btn">Request now</button>
+      <button class="uber-btn" id="later-uber-btn">Schedule for later</button>
+    </div>
 
-    <h2>Exercise 10c</h2>
-    <button class="js-button">Test</button>
+    <div class="project">
+      <h2>Exercise 10c</h2>
+      <button class="js-button">Test</button>
+    </div>
 
-    <h2>Exercise 10d</h2>
-    <button onclick="toggleCheck('.toggling')" class="toggle-btn toggling">
-      Gaming
-    </button>
-    <button onclick="toggleCheck('.toggling-2')" class="toggle-btn toggling-2">
-      Music
-    </button>
-    <button onclick="toggleCheck('.toggling-3')" class="toggle-btn toggling-3">
-      Tech
-    </button>
+    <div class="project">
+      <h2>Exercise 10d</h2>
+      <button onclick="toggleCheck('.toggling')" class="toggle-btn toggling">
+        Gaming
+      </button>
+      <button
+        onclick="toggleCheck('.toggling-2')"
+        class="toggle-btn toggling-2"
+      >
+        Music
+      </button>
+      <button
+        onclick="toggleCheck('.toggling-3')"
+        class="toggle-btn toggling-3"
+      >
+        Tech
+      </button>
+    </div>
 
-    <h2>Amazon Shipping Calculator</h2>
-    <p>Orders under $40 = plus $10 shipping.</p>
-    <p>Orders over $40 = FREE shipping.</p>
-    <input
-      placeholder="Cost of Order"
-      class="js-input cost-input"
-      onkeydown="
-      handleCostKeydown(event);"
-    />
-    <button onclick="calculateTotal()" class="total-btn">Calculate</button>
-    <p class="js-totalCalculation display"></p>
+    <div class="project">
+      <h2>Amazon Shipping Calculator</h2>
+      <p>Orders under $40 = plus $10 shipping.</p>
+      <p>Orders over $40 = FREE shipping.</p>
+      <input
+        placeholder="Cost of Order"
+        class="js-input cost-input"
+        onkeydown="
+        handleCostKeydown(event);"
+      />
+      <button onclick="calculateTotal()" class="total-btn">Calculate</button>
+      <p class="js-totalCalculation display"></p>
+      <p class="js-error-message display"></p>
+    </div>
 
     <script src="lesson10-exercises-scripts.js"></script>
   </body>
