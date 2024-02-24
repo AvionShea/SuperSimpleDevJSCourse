@@ -62,3 +62,31 @@ function clearData(){
     document.querySelector('.js-error-message').innerHTML = '';
     document.querySelector('.js-totalCalculation').innerHTML = '';
 }
+
+//Calculator
+let calculation = localStorage.getItem('calculation') || '';
+
+displayCalculation();
+
+function updateCalculation(value) {
+    calculation += value;
+    displayCalculation()
+    saveCalculations();
+}
+function evalCalculation() {
+    calculation = eval(calculation);
+    displayCalculation()
+}
+
+function saveCalculations() {
+    localStorage.setItem('calculation', calculation);
+};
+
+function clearScreen() {
+    calculation = document.querySelector('#calculationDisplay').innerHTML = '';
+    alert('Cleared.');
+}
+
+function displayCalculation() {
+    document.querySelector('#calculationDisplay').innerHTML = calculation;
+}

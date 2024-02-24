@@ -1,5 +1,5 @@
 body{
-    background: rgb(194, 191, 8);
+    background: rgb(129, 127, 0);
 }
 .project{
     margin: 50px 0 0 30px;
@@ -87,4 +87,44 @@ body{
 
 .js-error-message{
     color: red;
+}
+
+/*Calculator*/
+.cal-display{
+    font-size: 50px;
+    color: white;
+    margin: 0 auto;
+}
+.cal-screen{
+    height: 150px;
+    width: 375px;
+    margin: 15px auto;
+    background: rgb(151, 151, 151);
+    border-radius: 10px 10px 0 0;
+}
+
+.cal-body{
+    background: black;
+    width: 375px;
+    height:550px;
+    border-radius: 10px 10px 50px 50px;
+}
+.cal-btns{
+    cursor: pointer;
+    border-radius: 60px;
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    color: white;
+    background: rgb(66, 66, 66);
+    margin: 0 15px;
+    padding: 10px;
+    border: none;
+}
+#clear{
+    font-size: 15px;
+}
+
+.special-btn{
+    background: rgb(255, 166, 0);
 }

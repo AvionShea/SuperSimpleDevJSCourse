@@ -53,6 +53,79 @@
       <p class="js-error-message display"></p>
     </div>
 
+    <h2>9j Exercise</h2>
+    <div class="project cal-body">
+      <section class="cal-screen">
+          <p id="calculationDisplay" class="cal-display"></p>
+          <p>
+      </section>
+        <button class="cal-btns" onclick="updateCalculation('1')" ;>1</button>
+        <button class="cal-btns" onclick="updateCalculation('2')" ;>2</button>
+        <button class="cal-btns" onclick="updateCalculation('3')" ;>3</button>
+        <button
+          class="cal-btns special-btn"
+          onclick="updateCalculation(' + ')"
+          ;
+        >
+          +
+        </button>
+      </p>
+
+      <p>
+        <button class="cal-btns" onclick="updateCalculation('4')" ;>4</button>
+        <button class="cal-btns" onclick="updateCalculation('5')" ;>5</button>
+        <button class="cal-btns" onclick="updateCalculation('6')" ;>6</button>
+        <button
+          class="cal-btns special-btn"
+          onclick="updateCalculation(' - ')"
+          ;
+        >
+          -
+        </button>
+      </p>
+
+      <p>
+        <button class="cal-btns" onclick="updateCalculation('7')" ;>7</button>
+        <button class="cal-btns" onclick="updateCalculation('8')" ;>8</button>
+        <button class="cal-btns" onclick="updateCalculation('9')" ;>9</button>
+        <button
+          class="cal-btns special-btn"
+          onclick="updateCalculation(' * ')"
+          ;
+        >
+          *
+        </button>
+      </p>
+
+      <p>
+        <button class="cal-btns" onclick="updateCalculation('0')" ;>0</button>
+        <button class="cal-btns" onclick="updateCalculation('.')" ;>.</button>
+        <button
+          class="cal-btns"
+          onclick="evalCalculation(); 
+        saveCalculations();"
+        >
+          =
+        </button>
+        <button
+          class="cal-btns special-btn"
+          onclick="updateCalculation(' / ')"
+          ;
+        >
+          /
+        </button>
+      </p>
+      <p>
+        <button
+          class="cal-btns"
+          id="clear"
+          onclick="clearScreen(); saveCalculations();"
+        >
+          Clear
+        </button>
+      </p>
+    </div>
+
     <script src="lesson10-exercises-scripts.js"></script>
   </body>
 </html>
