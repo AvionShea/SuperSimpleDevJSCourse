@@ -40,6 +40,7 @@
 
 //todo
 //.push() to add to list
+//.pop() to delete?
 //.length?
 
 //practice one todo
@@ -48,9 +49,12 @@
     const itemArray = [];
     //addEventListener(click) that gets document.querySelector.value
     function addItems(){
-        let listItems = document.querySelector('#todo-items').value;
+        let listItems = document.querySelector('#todo-items');
+        let storedItems = listItems.value;
     //Store items in array
-        itemArray.push(listItems);
+        itemArray.push(storedItems);
     //display in console
         console.log(itemArray);
+    //clear input
+        listItems.value = '';
     };
