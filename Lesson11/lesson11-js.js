@@ -58,3 +58,18 @@
     //clear input
         listItems.value = '';
     };
+
+
+    //practice two todo
+    const todoArray = [];
+
+    function addToList(){
+        let itemsOnList = document.querySelector('#todo-items-two');
+        let storedListItems = itemsOnList.value;
+
+        todoArray.push(storedListItems);
+
+        document.querySelector('#display-items').innerText = todoArray;
+
+        itemsOnList.value = '';
+    }
