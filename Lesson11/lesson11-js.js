@@ -110,7 +110,7 @@
     // }
 
     //Accumulator Pattern
-    let numArray = [1, 1, 3];
+    let numArray = [38, 127, 15];
 
     //1.create a variable to store result
     let addTotal = 0;
@@ -120,5 +120,5 @@
         let nums = numArray[i];
         addTotal += nums;
         
-        document.getElementById('test-display').innerHTML = `Total: ${addTotal}`;
+        document.getElementById('test-display').innerHTML = `Total Compensation: $${addTotal}K`;
     };
