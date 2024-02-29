@@ -120,5 +120,5 @@
         let nums = numArray[i];
         addTotal += nums;
         
-        console.log(addTotal);
+        document.getElementById('test-display').innerHTML = `Total: ${addTotal}`;
     };
