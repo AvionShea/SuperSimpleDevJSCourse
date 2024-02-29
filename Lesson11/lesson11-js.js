@@ -61,15 +61,37 @@
 
 
     //practice two todo
-    const todoArray = [];
 
-    function addToList(){
-        let itemsOnList = document.querySelector('#todo-items-two');
-        let storedListItems = itemsOnList.value;
+    //     const todoArray = [];
 
-        todoArray.push(storedListItems);
+    // function addToList(){
+    //     let itemsOnList = document.querySelector('#todo-items-two');
+    //     let storedListItems = itemsOnList.value;
 
-        document.querySelector('#display-items').innerText = todoArray;
+    //     todoArray.push(storedListItems);
 
-        itemsOnList.value = '';
-    }
+    //     document.querySelector('#display-items').innerText = todoArray;
+
+    //     itemsOnList.value = '';
+    // };
+    
+
+    //Example One - Loop through an Array
+    // const practiceArray = [
+    //     "learn JavaScript",
+    //     "practice technical interviews",
+    //     "apply for jobs"
+    // ];
+
+    // for(let index = 0; index <= practiceArray.length - 1; index++){
+    //     const value = practiceArray[index];
+    //     console.log(value);
+    // };
+
+    // //shortcut
+    // for(let i = 0; i < practiceArray.length; i++){
+    //     const value = practiceArray[i];
+    //     console.log(value);
+    // }
+
+    //Accumulator Pattern
