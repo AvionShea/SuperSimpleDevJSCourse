@@ -84,11 +84,11 @@
     // }
 
     //non-standard example - doesn't have a loop variable that we increase every time nor does it include increment step
-    let randomNumber = 0;
-    while(randomNumber < 0.6){
-        randomNumber = Math.random();
-        console.log(randomNumber);
-    };
+    // let randomNumber = 0;
+    // while(randomNumber < 0.6){
+    //     randomNumber = Math.random();
+    //     console.log(randomNumber);
+    // };
     
     //for loop - use if the loop is standard
     //Example One - Loop through an Array
@@ -110,3 +110,15 @@
     // }
 
     //Accumulator Pattern
+    let numArray = [1, 1, 3];
+
+    //1.create a variable to store result
+    let addTotal = 0;
+
+    //2. Loop through array and update result
+    for(let i = 0; i < numArray.length; i++){
+        let nums = numArray[i];
+        addTotal += nums;
+        
+        console.log(addTotal);
+    };
