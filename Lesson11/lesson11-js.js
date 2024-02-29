@@ -74,8 +74,23 @@
 
     //     itemsOnList.value = '';
     // };
-    
 
+    //while loop - use if the loop is non-standard
+    // let i = 1;
+
+    // while(i <= 10){
+    //     console.log(i);
+    //     i++;
+    // }
+
+    //non-standard example - doesn't have a loop variable that we increase every time nor does it include increment step
+    let randomNumber = 0;
+    while(randomNumber < 0.6){
+        randomNumber = Math.random();
+        console.log(randomNumber);
+    };
+    
+    //for loop - use if the loop is standard
     //Example One - Loop through an Array
     // const practiceArray = [
     //     "learn JavaScript",
