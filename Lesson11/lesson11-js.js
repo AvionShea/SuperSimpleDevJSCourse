@@ -122,3 +122,15 @@
         
         document.getElementById('test-display').innerHTML = `Total Compensation: $${addTotal}K`;
     };
+
+    //Accumulator Pattern - Double Values
+    let newArrayNum = [25, 10, 2.5];
+    let doubleTotal = [];
+
+    for (let i = 0; i < newArrayNum.length; i++){
+        const num = newArrayNum[i];
+
+        doubleTotal.push(num * 2);
+
+        document.getElementById('test-display-double').innerHTML = `Doubled Array: ${doubleTotal}`;
+    };
