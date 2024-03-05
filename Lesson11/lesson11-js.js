@@ -109,6 +109,8 @@
     //     console.log(value);
     // }
 
+    /*
+
     //Accumulator Pattern
     let numArray = [38, 127, 15];
 
@@ -117,14 +119,15 @@
 
     //2. Loop through array and update result
     for(let i = 0; i < numArray.length; i++){
-        let nums = numArray[i];
+        const nums = numArray[i];
         addTotal += nums;
         
         document.getElementById('test-display').innerHTML = `Total Compensation: $${addTotal}K`;
     };
+    */
 
     //Accumulator Pattern - Double Values
-    let newArrayNum = [25, 10, 2.5];
+    /*let newArrayNum = [25, 10, 2.5];
     let doubleTotal = [];
 
     for (let i = 0; i < newArrayNum.length; i++){
@@ -134,3 +137,32 @@
 
         document.getElementById('test-display-double').innerHTML = `Doubled Array: ${doubleTotal}`;
     };
+    */
+
+    // Todo List Practice Two
+    let todoListTwo = [];
+
+    displayTodoList();
+
+    function displayTodoList() {
+        let todoListHTML = '';
+
+        for(let i = 0; i < todoListTwo.length; i++){
+            const todoList = todoListTwo[i];
+            const html = `<p>${todoList}</p>`;
+            todoListHTML += html;
+        }
+
+        document.getElementById('display-items').innerHTML = todoListHTML;
+    };
+
+    function addToList(){
+        let itemsOnList = document.querySelector('#todo-items-two');
+        let storedListItems = itemsOnList.value;
+    
+        todoListTwo.push(storedListItems);
+    
+        itemsOnList.value = '';
+
+        displayTodoList();
+         };
