@@ -142,7 +142,7 @@
     // Todo List Practice Two
     let todoListTwo = [];
 
-    displayTodoList();
+    // displayTodoList();
 
     function displayTodoList() {
         let todoListHTML = '';
