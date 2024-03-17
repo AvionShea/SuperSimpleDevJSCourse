@@ -164,4 +164,4 @@
         itemsOnList.value = '';
 
         displayTodoList();
-         };
+    };
