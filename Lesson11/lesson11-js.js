@@ -156,7 +156,7 @@
     };
 
     function addToList(){
-        let itemsOnList = document.querySelector('#todo-items-two');
+        let itemsOnList = document.getElementById('todo-items-two');
         let storedListItems = itemsOnList.value;
     
         todoListTwo.push(storedListItems);
