@@ -143,7 +143,6 @@
     let todoListTwo = [];
 
     // displayTodoList();
-
     function displayTodoList() {
         let todoListHTML = '';
 
