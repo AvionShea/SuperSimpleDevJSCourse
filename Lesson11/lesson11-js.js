@@ -1,3 +1,46 @@
+//practice one todo
+//Algorithm
+    //create an array
+    const itemArray = [];
+    //addEventListener(click) that gets document.querySelector.value
+    function addItems(){
+        let listItems = document.querySelector('#todo-items');
+        let storedItems = listItems.value;
+    //Store items in array
+        itemArray.push(storedItems);
+    //display in console
+        console.log(itemArray);
+    //clear input
+        listItems.value = '';
+    };
+
+    // Todo List Practice Two
+    let todoListTwo = [];
+
+    // displayTodoList();
+    function displayTodoList() {
+        let todoListHTML = '';
+
+        for(let i = 0; i < todoListTwo.length; i++){
+            const todoList = todoListTwo[i];
+            const html = `<p>${todoList}</p>`;
+            todoListHTML += html;
+        }
+
+        document.getElementById('display-items').innerHTML = todoListHTML;
+    };
+
+    function addToList(){
+        let itemsOnList = document.getElementById('todo-items-two');
+        let storedListItems = itemsOnList.value;
+    
+        todoListTwo.push(storedListItems);
+    
+        itemsOnList.value = '';
+
+        displayTodoList();
+    };
+
 // const array1 = [
 //     30, 
 //     40, 
@@ -42,22 +85,6 @@
 //.push() to add to list
 //.pop() to delete?
 //.length?
-
-//practice one todo
-//Algorithm
-    //create an array
-    const itemArray = [];
-    //addEventListener(click) that gets document.querySelector.value
-    function addItems(){
-        let listItems = document.querySelector('#todo-items');
-        let storedItems = listItems.value;
-    //Store items in array
-        itemArray.push(storedItems);
-    //display in console
-        console.log(itemArray);
-    //clear input
-        listItems.value = '';
-    };
 
 
     //practice two todo
@@ -138,30 +165,3 @@
         document.getElementById('test-display-double').innerHTML = `Doubled Array: ${doubleTotal}`;
     };
     */
-
-    // Todo List Practice Two
-    let todoListTwo = [];
-
-    // displayTodoList();
-    function displayTodoList() {
-        let todoListHTML = '';
-
-        for(let i = 0; i < todoListTwo.length; i++){
-            const todoList = todoListTwo[i];
-            const html = `<p>${todoList}</p>`;
-            todoListHTML += html;
-        }
-
-        document.getElementById('display-items').innerHTML = todoListHTML;
-    };
-
-    function addToList(){
-        let itemsOnList = document.getElementById('todo-items-two');
-        let storedListItems = itemsOnList.value;
-    
-        todoListTwo.push(storedListItems);
-    
-        itemsOnList.value = '';
-
-        displayTodoList();
-    };
