@@ -179,7 +179,9 @@
     //add to empty array
         activityList.push(addedActivityItems);
     //display list
-        console.log(activityList);
+        document.querySelector('#display-activity').innerHTML = activityList;
+
+        //console.log(activityList);
 
         activityItems.value = '';
     };
