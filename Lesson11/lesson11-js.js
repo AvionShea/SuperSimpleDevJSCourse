@@ -165,3 +165,21 @@
         document.getElementById('test-display-double').innerHTML = `Doubled Array: ${doubleTotal}`;
     };
     */
+
+
+    //todo list - solo attempt
+
+    //empty array to store list
+    const activityList = [];
+    //grab items from html
+    function addActivities(){
+        let activityItems = document.querySelector('#activities');
+    //convert to value
+        let addedActivityItems = activityItems.value;
+    //add to empty array
+        activityList.push(addedActivityItems);
+    //display list
+        console.log(activityList);
+
+        activityItems.value = '';
+    };
