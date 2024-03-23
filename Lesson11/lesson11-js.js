@@ -23,8 +23,8 @@
 
         for(let i = 0; i < todoListTwo.length; i++){
             const todoList = todoListTwo[i];
-            const html = `<p>${todoList}</p>`;
-            todoListHTML += html;
+            const htmlDisplay = `<p>${todoList}</p>`;
+            todoListHTML += htmlDisplay;
         }
 
         document.getElementById('display-items').innerHTML = todoListHTML;
