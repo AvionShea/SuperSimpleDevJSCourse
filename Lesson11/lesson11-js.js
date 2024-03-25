@@ -185,3 +185,23 @@
 
         activityItems.value = '';
     };
+
+    //empty array to place items
+    //grab the items from html
+    //turn them into a value
+    //add to array
+    //display them with own line
+    //clear input element
+
+    let todoListArray = [];
+
+function addActionItems(){
+    let actionList = document.querySelector('#activitiesTwo');
+    let actionItems = actionList.value;
+
+    todoListArray.push(actionItems);
+
+    //console.log(todoListArray);
+
+    actionList.value = '';
+};
