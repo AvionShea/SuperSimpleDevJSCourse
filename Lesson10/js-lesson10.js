@@ -109,10 +109,11 @@ function resetScore() {
 }
 
 
-
+/*
 String(25);
 console.log('25' - 5);
 console.log('25' + 5);
+*/
 
 //don't have to add window. JS does it automatically. Window is a built-in object that represents the browser
 window //window object that represent the browser
