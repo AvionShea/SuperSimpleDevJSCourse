@@ -204,4 +204,21 @@ function addActionItems(){
     //console.log(todoListArray);
 
     actionList.value = '';
+
+    addToHTML();
 };
+
+function addToHTML(){
+    let htmlListDisplay = '';
+
+    for(let i = 0; i < todoListArray.length; i++){
+        let htmlList = todoListArray[i];
+        let placeInHtml = `<p>${htmlList}</p>`
+
+        htmlListDisplay += placeInHtml;
+    };
+
+    document.querySelector('#display-activity-two').innerHTML = htmlListDisplay;
+
+    //console.log(htmlListDisplay);
+}
