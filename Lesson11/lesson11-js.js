@@ -219,4 +219,4 @@ function addToHTML(){
     };
 
     document.querySelector('#display-activity-two').innerHTML = todoListItems;
-}
+};
