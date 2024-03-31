@@ -207,16 +207,3 @@ function addActionItems(){
 
     addToHTML();
 };
-
-function addToHTML(){
-    let todoListItems = '';
-
-    for(let i = 0; i < todoListArray.length; i++){
-        const listItems = todoListArray[i];
-        const displayItems = `<p>${listItems}</p>`;
-
-        todoListItems += displayItems;
-    };
-
-    document.querySelector('#display-activity-two').innerHTML = todoListItems;
-};
