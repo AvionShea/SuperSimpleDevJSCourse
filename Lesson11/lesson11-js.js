@@ -192,32 +192,3 @@
     //add to array
     //display them with own line
     //clear input element
-
-    let todoListArray = [];
-
-function addActionItems(){
-    let actionList = document.querySelector('#activitiesTwo');
-    let actionItems = actionList.value;
-
-    todoListArray.push(actionItems);
-
-    //console.log(todoListArray);
-
-    actionList.value = '';
-
-    addToHTML();
-};
-
-function addToHTML(){
-    let listOfTodoItems = ''; //clearing out
-
-    //loops through array, adding activities
-    for(let i = 0; i < todoListArray.length; i++){
-        const itemsOfActivities = todoListArray[i]; //retrieves index of items keyed
-        const placeInHTML = `<p>${itemsOfActivities}</p>` //places items on individual lines
-
-        listOfTodoItems += placeInHTML; //adds activities to list of items
-    };
-
-    document.querySelector('#display-activity-two').innerHTML = listOfTodoItems;
-};
