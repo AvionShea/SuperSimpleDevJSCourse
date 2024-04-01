@@ -201,7 +201,22 @@
 
         todoTwoArray.push(todoList);
 
-        console.log(todoTwoArray);
+        // console.log(todoTwoArray);
 
         activitiesListItems.value = '';
+
+        addToHTML();
+    };
+
+    function addToHTML(){
+        let todoHTML = '';
+
+        for(let i = 0; i < todoTwoArray.length; i++){
+            let itemsToDisplay = todoTwoArray[i];
+            let placeInHtml = `<p>${itemsToDisplay}</p>`
+
+            todoHTML += placeInHtml;
+        };
+
+        document.querySelector('#display-activity-two').innerHTML = todoHTML;
     };
