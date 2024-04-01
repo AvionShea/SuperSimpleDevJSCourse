@@ -192,3 +192,16 @@
     //add to array
     //display them with own line
     //clear input element
+
+    let todoTwoArray = [];
+
+    function addActionItems(){
+        let activitiesListItems = document.querySelector('#activitiesTwo');
+        let todoList = activitiesListItems.value;
+
+        todoTwoArray.push(todoList);
+
+        console.log(todoTwoArray);
+
+        activitiesListItems.value = '';
+    };
