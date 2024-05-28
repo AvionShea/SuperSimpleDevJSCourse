@@ -25,7 +25,7 @@
             const todoList = todoListTwo[i];
             const htmlDisplay = `<p>${todoList}</p>`;
             todoListHTML += htmlDisplay;
-        }
+        };
 
         document.getElementById('display-items').innerHTML = todoListHTML;
     };
